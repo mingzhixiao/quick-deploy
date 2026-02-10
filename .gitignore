@@ -1,0 +1,7 @@
+/build/
+/dist/
+.idea
+.vscode
+.git
+run.sh
+config.json
