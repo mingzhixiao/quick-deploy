@@ -1358,7 +1358,7 @@ class MainWindow(QWidget):
 
         # 第一行：完整部署
         row1 = QHBoxLayout()
-        self.btn_full_deploy = QPushButton("完整部署（上传配置文件+部署脚本）")
+        self.btn_full_deploy = QPushButton("完整部署（上传文件+部署脚本）")
         self.btn_full_deploy.clicked.connect(self.full_deploy)
         row1.addWidget(self.btn_full_deploy)
         action_layout.addLayout(row1)
@@ -1367,7 +1367,7 @@ class MainWindow(QWidget):
         row2 = QHBoxLayout()
         self.btn_run_pre_commands = QPushButton("执行前置命令")
         self.btn_run_pre_commands.clicked.connect(self.run_pre_commands)
-        self.btn_upload_files = QPushButton("上传配置文件")
+        self.btn_upload_files = QPushButton("上传文件")
         self.btn_upload_files.clicked.connect(self.upload_project_files)
         row2.addWidget(self.btn_run_pre_commands)
         row2.addWidget(self.btn_upload_files)
